@@ -1,0 +1,30 @@
+.main-chat
+  .main-chat__head
+    %ul.main-chat__head__box
+      test
+      %li.main-chat__head__box__user
+        Member:masa  
+    .main-chat__head__right
+      =link_to "#", class: "" do
+        Edit
+  .main-chat__member
+    .main-chat__member__box
+      masa
+      .main-chat__member__box__time
+        2020/1/20(mon) 7:32:01
+    .main-chat__member__comment
+      おはよう
+    .main-chat__member__box
+      masa
+      .main-chat__member__box__time
+        2020/1/20(mon) 8:00:00
+    .main-chat__member__comment
+      今日は朝から雨
+  .from
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "sumbit", class: "submit-btn", placeholder: "Send"}
