@@ -44,17 +44,21 @@
   &__groups {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
-    &__member {
-      display: flex;
-      padding-top: 20px;
-      margin: 0 20px;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-    &__message {
-      padding-bottom: 40px;
-      margin: 0 20px;
-      font-weight: bold;
+    .group {
+      &__name {
+        display: flex;
+        padding-top: 20px;
+        margin: 0 20px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #ffffff;
+      }
+      &__message {
+        padding-bottom: 40px;
+        margin: 0 20px;
+        font-weight: bold;
+        color: #ffffff;
+      }
     }
   }
 }
