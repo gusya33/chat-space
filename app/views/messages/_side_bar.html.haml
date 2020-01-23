@@ -2,15 +2,14 @@
   .side-chat__head
     .side-chat__head__box
       .side-chat__head__box__name
-        名前
+        = current_user.name
       .side-chat__head__box__menu
         .edit-btn
           = link_to "#" do
             = icon('fa', 'edit', class:"edit-btn")
-
         .cog-btn
-          = link_to "#" do
-            = icon('fa', 'cog', class:"cog-btn")
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: "cog-btn")
   .side-chat__groups
     .side-chat__groups__member
       ffffff
