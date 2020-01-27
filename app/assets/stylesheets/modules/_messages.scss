@@ -82,12 +82,14 @@
         margin-top: 15px;
       }
     }
-    &__right {
+    &__right a {
       font-size: 16px;
       padding: 5px 20px;
       margin-top: 28px;
       margin-bottom: 32px;
       color: #38aef0;
+      border: solid 1px #38aef0;
+      display: block;
     }
   }
   &__member {
