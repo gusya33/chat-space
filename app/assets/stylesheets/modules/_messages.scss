@@ -45,18 +45,21 @@
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     .group {
+      a {
+        text-decoration: none;
+      }
       &__name {
+        font-size: 15px;
         display: flex;
         padding-top: 20px;
         margin: 0 20px;
         margin-bottom: 5px;
-        font-weight: bold;
         color: #ffffff;
       }
       &__message {
+        font-size: 11px;
         padding-bottom: 40px;
         margin: 0 20px;
-        font-weight: bold;
         color: #ffffff;
       }
     }
@@ -80,6 +83,10 @@
         font-size: 12px;
         color: #999999;
         margin-top: 15px;
+        display: flex;
+        &__list {
+          padding-left: 5px;
+        }
       }
     }
     &__right a {
