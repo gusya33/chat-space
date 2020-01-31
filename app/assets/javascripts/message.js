@@ -4,10 +4,12 @@ $(function(){
       var html =
       `<div class="message" data-message-id=${message.id}>
         <div class="message__member">
-          ${message.user_name}
-          <div class="message__time">
-            ${message.created_at}
-          </div>
+          <ul class="message__member__test">
+            <li>${message.user_name}</li>
+            <li class="message__time">
+              ${message.created_at}
+            </li>
+          </ul>
         </div>
         <div class="message__comment">
           <p class="lower-message__content">
@@ -20,12 +22,12 @@ $(function(){
       var html =
        `<div class="message" data-message-id=${message.id}>
           <div class="message__member">
-            <div class="message__member">
-              ${message.user_name}
-            </div>
-            <div class="message__time">
-              ${message.created_at}
-            </div>
+            <ul class="message__member__test">
+              <li>${message.user_name}</li>
+              <li class="message__time">
+                ${message.created_at}
+              </li>
+            </ul>
           </div>
           <div class="lower-message">
             <img class = "lower-message__image" src = "${message.image}">
@@ -35,10 +37,12 @@ $(function(){
       var html =
         `<div class="message" data-message-id=${message.id}>
           <div class="message__member">
-            ${message.user_name}
-            <div class="message__time">
-              ${message.created_at}
-            </div>
+            <ul class="message__member__test">
+              <li>${message.user_name}</li>
+              <li class="message__time">
+                ${message.created_at}
+              </li>
+            </ul>
           </div>
           <div class="message__comment">
             <p class="lower-message__content">
